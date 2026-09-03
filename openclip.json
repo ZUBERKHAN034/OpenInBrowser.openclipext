@@ -1,0 +1,343 @@
+{
+  "identifier": "com.pilotmoon.openinbrowser",
+  "name": "Open in Browser",
+  "version": "1.0.0",
+  "actions": [
+    {
+      "id": "arc",
+      "title": "Open in Arc",
+      "icon": "lineicons:arc-browser",
+      "type": "shell",
+      "scriptCode": "open -b company.thebrowser.Browser \"$OPENCLIP_TEXT\" 2>/dev/null || echo '{\"type\":\"toast\",\"message\":\"Browser Not Available\",\"style\":\"error\"}'",
+      "requirements": {
+        "regex": "https?://",
+        "apps": [
+          "company.thebrowser.Browser"
+        ],
+        "appsMode": "deny"
+      }
+    },
+    {
+      "id": "brave",
+      "title": "Open in Brave",
+      "icon": "simple-icons:brave",
+      "type": "shell",
+      "scriptCode": "open -b com.brave.Browser \"$OPENCLIP_TEXT\" 2>/dev/null || echo '{\"type\":\"toast\",\"message\":\"Browser Not Available\",\"style\":\"error\"}'",
+      "requirements": {
+        "regex": "https?://",
+        "apps": [
+          "com.brave.Browser"
+        ],
+        "appsMode": "deny"
+      }
+    },
+    {
+      "id": "chatgpt-atlas",
+      "title": "Open in ChatGPT Atlas",
+      "icon": "codicon:openai",
+      "type": "shell",
+      "scriptCode": "open -b com.openai.atlas \"$OPENCLIP_TEXT\" 2>/dev/null || echo '{\"type\":\"toast\",\"message\":\"Browser Not Available\",\"style\":\"error\"}'",
+      "requirements": {
+        "regex": "https?://",
+        "apps": [
+          "com.openai.atlas"
+        ],
+        "appsMode": "deny"
+      }
+    },
+    {
+      "id": "chromium",
+      "title": "Open in Chromium",
+      "icon": "mingcute:chrome-line",
+      "type": "shell",
+      "scriptCode": "open -b org.chromium.Chromium \"$OPENCLIP_TEXT\" 2>/dev/null || echo '{\"type\":\"toast\",\"message\":\"Browser Not Available\",\"style\":\"error\"}'",
+      "requirements": {
+        "regex": "https?://",
+        "apps": [
+          "org.chromium.Chromium"
+        ],
+        "appsMode": "deny"
+      }
+    },
+    {
+      "id": "comet",
+      "title": "Open in Comet",
+      "icon": "arcticons:comet",
+      "type": "shell",
+      "scriptCode": "open -b ai.perplexity.comet \"$OPENCLIP_TEXT\" 2>/dev/null || echo '{\"type\":\"toast\",\"message\":\"Browser Not Available\",\"style\":\"error\"}'",
+      "requirements": {
+        "regex": "https?://",
+        "apps": [
+          "ai.perplexity.comet"
+        ],
+        "appsMode": "deny"
+      }
+    },
+    {
+      "id": "devonagent-pro",
+      "title": "Open in DEVONagent Pro",
+      "icon": "mdi:magnify",
+      "type": "shell",
+      "scriptCode": "open -b com.devon-technologies.agent \"$OPENCLIP_TEXT\" 2>/dev/null || echo '{\"type\":\"toast\",\"message\":\"Browser Not Available\",\"style\":\"error\"}'",
+      "requirements": {
+        "regex": "https?://",
+        "apps": [
+          "com.devon-technologies.agent"
+        ],
+        "appsMode": "deny"
+      }
+    },
+    {
+      "id": "dia",
+      "title": "Open in Dia",
+      "icon": "file-icons:dia",
+      "type": "shell",
+      "scriptCode": "open -b company.thebrowser.dia \"$OPENCLIP_TEXT\" 2>/dev/null || echo '{\"type\":\"toast\",\"message\":\"Browser Not Available\",\"style\":\"error\"}'",
+      "requirements": {
+        "regex": "https?://",
+        "apps": [
+          "company.thebrowser.dia"
+        ],
+        "appsMode": "deny"
+      }
+    },
+    {
+      "id": "duckduckgo",
+      "title": "Open in DuckDuckGo",
+      "icon": "simple-icons:duckduckgo",
+      "type": "shell",
+      "scriptCode": "open -b com.duckduckgo.macos.browser \"$OPENCLIP_TEXT\" 2>/dev/null || echo '{\"type\":\"toast\",\"message\":\"Browser Not Available\",\"style\":\"error\"}'",
+      "requirements": {
+        "regex": "https?://",
+        "apps": [
+          "com.duckduckgo.macos.browser"
+        ],
+        "appsMode": "deny"
+      }
+    },
+    {
+      "id": "ecosia",
+      "title": "Open in Ecosia",
+      "icon": "simple-icons:ecosia",
+      "type": "shell",
+      "scriptCode": "open -b org.ecosia.browser \"$OPENCLIP_TEXT\" 2>/dev/null || echo '{\"type\":\"toast\",\"message\":\"Browser Not Available\",\"style\":\"error\"}'",
+      "requirements": {
+        "regex": "https?://",
+        "apps": [
+          "org.ecosia.browser"
+        ],
+        "appsMode": "deny"
+      }
+    },
+    {
+      "id": "chrome",
+      "title": "Open in Google Chrome",
+      "icon": "fa6-brands:chrome",
+      "type": "shell",
+      "scriptCode": "open -b com.google.Chrome \"$OPENCLIP_TEXT\" 2>/dev/null || echo '{\"type\":\"toast\",\"message\":\"Browser Not Available\",\"style\":\"error\"}'",
+      "requirements": {
+        "regex": "https?://",
+        "apps": [
+          "com.google.Chrome"
+        ],
+        "appsMode": "deny"
+      }
+    },
+    {
+      "id": "helium",
+      "title": "Open in Helium",
+      "icon": "fa7-solid:star-of-life",
+      "type": "shell",
+      "scriptCode": "open -b net.imput.helium \"$OPENCLIP_TEXT\" 2>/dev/null || echo '{\"type\":\"toast\",\"message\":\"Browser Not Available\",\"style\":\"error\"}'",
+      "requirements": {
+        "regex": "https?://",
+        "apps": [
+          "net.imput.helium"
+        ],
+        "appsMode": "deny"
+      }
+    },
+    {
+      "id": "icab",
+      "title": "Open in iCab",
+      "icon": "mdi:web",
+      "type": "shell",
+      "scriptCode": "open -b de.icab.iCab \"$OPENCLIP_TEXT\" 2>/dev/null || echo '{\"type\":\"toast\",\"message\":\"Browser Not Available\",\"style\":\"error\"}'",
+      "requirements": {
+        "regex": "https?://",
+        "apps": [
+          "de.icab.iCab"
+        ],
+        "appsMode": "deny"
+      }
+    },
+    {
+      "id": "edge",
+      "title": "Open in Microsoft Edge",
+      "icon": "fa6-brands:edge",
+      "type": "shell",
+      "scriptCode": "open -b com.microsoft.edgemac \"$OPENCLIP_TEXT\" 2>/dev/null || echo '{\"type\":\"toast\",\"message\":\"Browser Not Available\",\"style\":\"error\"}'",
+      "requirements": {
+        "regex": "https?://",
+        "apps": [
+          "com.microsoft.edgemac"
+        ],
+        "appsMode": "deny"
+      }
+    },
+    {
+      "id": "firefox",
+      "title": "Open in Mozilla Firefox",
+      "icon": "fa6-brands:firefox-browser",
+      "type": "shell",
+      "scriptCode": "open -b org.mozilla.firefox \"$OPENCLIP_TEXT\" 2>/dev/null || echo '{\"type\":\"toast\",\"message\":\"Browser Not Available\",\"style\":\"error\"}'",
+      "requirements": {
+        "regex": "https?://",
+        "apps": [
+          "org.mozilla.firefox"
+        ],
+        "appsMode": "deny"
+      }
+    },
+    {
+      "id": "mullvad",
+      "title": "Open in Mullvad",
+      "icon": "simple-icons:mullvad",
+      "type": "shell",
+      "scriptCode": "open -b net.mullvad.mullvadbrowser \"$OPENCLIP_TEXT\" 2>/dev/null || echo '{\"type\":\"toast\",\"message\":\"Browser Not Available\",\"style\":\"error\"}'",
+      "requirements": {
+        "regex": "https?://",
+        "apps": [
+          "net.mullvad.mullvadbrowser"
+        ],
+        "appsMode": "deny"
+      }
+    },
+    {
+      "id": "opera",
+      "title": "Open in Opera",
+      "icon": "simple-icons:opera",
+      "type": "shell",
+      "scriptCode": "open -b com.operasoftware.Opera \"$OPENCLIP_TEXT\" 2>/dev/null || echo '{\"type\":\"toast\",\"message\":\"Browser Not Available\",\"style\":\"error\"}'",
+      "requirements": {
+        "regex": "https?://",
+        "apps": [
+          "com.operasoftware.Opera"
+        ],
+        "appsMode": "deny"
+      }
+    },
+    {
+      "id": "orion",
+      "title": "Open in Orion",
+      "icon": "mdi:star-four-points-circle",
+      "type": "shell",
+      "scriptCode": "open -b com.kagi.kagimacOS \"$OPENCLIP_TEXT\" 2>/dev/null || echo '{\"type\":\"toast\",\"message\":\"Browser Not Available\",\"style\":\"error\"}'",
+      "requirements": {
+        "regex": "https?://",
+        "apps": [
+          "com.kagi.kagimacOS"
+        ],
+        "appsMode": "deny"
+      }
+    },
+    {
+      "id": "quark",
+      "title": "Open in Quark",
+      "icon": "arcticons:quark-browser",
+      "type": "shell",
+      "scriptCode": "open -b com.quark.desktop \"$OPENCLIP_TEXT\" 2>/dev/null || echo '{\"type\":\"toast\",\"message\":\"Browser Not Available\",\"style\":\"error\"}'",
+      "requirements": {
+        "regex": "https?://",
+        "apps": [
+          "com.quark.desktop"
+        ],
+        "appsMode": "deny"
+      }
+    },
+    {
+      "id": "safari",
+      "title": "Open in Safari",
+      "icon": "fa6-brands:safari",
+      "type": "shell",
+      "scriptCode": "open -b com.apple.Safari \"$OPENCLIP_TEXT\" 2>/dev/null || echo '{\"type\":\"toast\",\"message\":\"Browser Not Available\",\"style\":\"error\"}'",
+      "requirements": {
+        "regex": "https?://",
+        "apps": [
+          "com.apple.Safari"
+        ],
+        "appsMode": "deny"
+      }
+    },
+    {
+      "id": "tor-browser",
+      "title": "Open in Tor Browser",
+      "icon": "simple-icons:torbrowser",
+      "type": "shell",
+      "scriptCode": "open -b org.torproject.torbrowser \"$OPENCLIP_TEXT\" 2>/dev/null || echo '{\"type\":\"toast\",\"message\":\"Browser Not Available\",\"style\":\"error\"}'",
+      "requirements": {
+        "regex": "https?://",
+        "apps": [
+          "org.torproject.torbrowser"
+        ],
+        "appsMode": "deny"
+      }
+    },
+    {
+      "id": "vivaldi",
+      "title": "Open in Vivaldi",
+      "icon": "simple-icons:vivaldi",
+      "type": "shell",
+      "scriptCode": "open -b com.vivaldi.Vivaldi \"$OPENCLIP_TEXT\" 2>/dev/null || echo '{\"type\":\"toast\",\"message\":\"Browser Not Available\",\"style\":\"error\"}'",
+      "requirements": {
+        "regex": "https?://",
+        "apps": [
+          "com.vivaldi.Vivaldi"
+        ],
+        "appsMode": "deny"
+      }
+    },
+    {
+      "id": "waterfox",
+      "title": "Open in Waterfox",
+      "icon": "arcticons:waterfox",
+      "type": "shell",
+      "scriptCode": "open -b net.waterfox.waterfox \"$OPENCLIP_TEXT\" 2>/dev/null || echo '{\"type\":\"toast\",\"message\":\"Browser Not Available\",\"style\":\"error\"}'",
+      "requirements": {
+        "regex": "https?://",
+        "apps": [
+          "net.waterfox.waterfox"
+        ],
+        "appsMode": "deny"
+      }
+    },
+    {
+      "id": "zen",
+      "title": "Open in Zen",
+      "icon": "bxl:zen-browser",
+      "type": "shell",
+      "scriptCode": "open -b app.zen-browser.zen \"$OPENCLIP_TEXT\" 2>/dev/null || echo '{\"type\":\"toast\",\"message\":\"Browser Not Available\",\"style\":\"error\"}'",
+      "requirements": {
+        "regex": "https?://",
+        "apps": [
+          "app.zen-browser.zen"
+        ],
+        "appsMode": "deny"
+      }
+    },
+    {
+      "id": "shift",
+      "title": "Open in Shift",
+      "icon": "boxicons:shield-circle-filled",
+      "type": "shell",
+      "scriptCode": "open -b com.shift.browser \"$OPENCLIP_TEXT\" 2>/dev/null || echo '{\"type\":\"toast\",\"message\":\"Browser Not Available\",\"style\":\"error\"}'",
+      "requirements": {
+        "regex": "https?://",
+        "apps": [
+          "com.shift.browser"
+        ],
+        "appsMode": "deny"
+      }
+    }
+  ]
+}
