@@ -37,9 +37,9 @@ already in Safari.
 ## Download & Install
 
 1. Download this repo as a zip: click the **`<> Code ▼`** button, then click
-   **Download ZIP**. It will be downloaded as `OpenInBrowser.openclipext.zip`.
-2. Open OpenClip, go to **Actions > Install Extension…**, and select
-   `OpenInBrowser.openclipext.zip`.
+   **Download ZIP**.
+2. Open OpenClip, go to **Actions > Install Extension…**, and select the
+   downloaded extension zip.
 3. Click **Enable** on the trust sheet to activate the extension.
 
 ## Notes
