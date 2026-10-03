@@ -28,6 +28,7 @@ and choose the browser you want to open it in.
 - Tor Browser
 - Vivaldi
 - Waterfox
+- Yab
 - Zen
 
 Each action appears only when the selection contains a URL. The action for the

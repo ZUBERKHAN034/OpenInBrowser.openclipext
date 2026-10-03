@@ -312,6 +312,20 @@
       }
     },
     {
+      "id": "yab",
+      "title": "Open in Yab",
+      "icon": "codicon:share-window",
+      "type": "shell",
+      "scriptCode": "open -b dev.serafim.fast \"$OPENCLIP_TEXT\" 2>/dev/null || echo '{\"type\":\"toast\",\"message\":\"Browser Not Available\",\"style\":\"error\"}'",
+      "requirements": {
+        "regex": "https?://",
+        "apps": [
+          "dev.serafim.fast"
+        ],
+        "appsMode": "deny"
+      }
+    },
+    {
       "id": "zen",
       "title": "Open in Zen",
       "icon": "bxl:zen-browser",
